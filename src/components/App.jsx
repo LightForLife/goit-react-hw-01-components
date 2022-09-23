@@ -1,7 +1,7 @@
 import { Profile } from 'components/Profile/Profile';
 import user from 'path/user';
 import { Statistics } from 'components/Statistics/Statistics';
-import data from 'path/user';
+import data from 'path/data';
 
 export const App = () => {
   return (
@@ -13,7 +13,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       /> */}
-      <Statistics title="Upload stats" />
+      <Statistics title="Upload stats" stats={data} />
+      {/* <Statistics stats={data} /> */}
     </div>
   );
 };
