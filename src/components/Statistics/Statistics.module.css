@@ -1,0 +1,15 @@
+.title {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.statList {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  gap: 10px;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
