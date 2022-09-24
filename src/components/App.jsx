@@ -4,10 +4,11 @@ import { Statistics } from 'components/Statistics/Statistics';
 import data from 'path/data';
 import { FriendList } from 'components/FriendList/FriendList';
 import friends from 'path/friends';
+import { Container } from './App.styled';
 
 export const App = () => {
   return (
-    <div>
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -18,6 +19,6 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       {/* <Statistics stats={data} /> */}
-    </div>
+    </Container>
   );
 };

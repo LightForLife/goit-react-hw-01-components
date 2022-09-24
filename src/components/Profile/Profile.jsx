@@ -1,8 +1,8 @@
 // import user from '../../path/user';
 import PropTypes from 'prop-types';
 
-export const Profile = props => {
-  const { username, tag, location, avatar, stats } = props;
+export const Profile = ({ username, tag, location, avatar, stats }) => {
+  // const { username, tag, location, avatar, stats } = props;
   return (
     <div className="profile">
       <div className="description">
