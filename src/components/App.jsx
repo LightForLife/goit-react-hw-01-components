@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Container } from './App.styled';
 import { Profile } from 'components/Profile/Profile';
 import user from 'path/user';
