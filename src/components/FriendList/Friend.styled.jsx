@@ -2,7 +2,12 @@ import styled from '@emotion/styled';
 
 export const FriendsList = styled.ul`
   display: flex;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  background-color: aqua;
 `;
 
 export const FriendItem = styled.li`

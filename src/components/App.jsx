@@ -1,10 +1,13 @@
+import PropTypes from 'prop-types';
+import { Container } from './App.styled';
 import { Profile } from 'components/Profile/Profile';
 import user from 'path/user';
 import { Statistics } from 'components/Statistics/Statistics';
 import data from 'path/data';
 import { FriendList } from 'components/FriendList/FriendList';
 import friends from 'path/friends';
-import { Container } from './App.styled';
+import { Transaction } from 'components/Transaction/Transaction';
+import transactions from 'path/transactions';
 
 export const App = () => {
   return (
@@ -19,6 +22,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       {/* <Statistics stats={data} /> */}
+      <Transaction items={transactions} />
     </Container>
   );
 };
