@@ -1,22 +1,37 @@
 import styled from '@emotion/styled';
 
 export const FriendsList = styled.ul`
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
-  margin-bottom: 50px;
-
-  background-color: aqua;
+  max-width: 500px;
+  padding: 3px;
 `;
 
 export const FriendItem = styled.li`
   display: flex;
   align-items: center;
+  background-color: #9edaff;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  & + & {
+    margin-top: 10px;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+  }
 `;
 
 export const StatusIsOnline = styled.span`
   display: block;
+  margin-right: 12px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -37,9 +52,10 @@ export const StatusIsOnline = styled.span`
 `;
 
 export const AvatarFriend = styled.img`
-  &:hover {
-    background-color: #ffa812;
-  }
+  margin-right: 30px;
 `;
 
-export const NameFriend = styled.p``;
+export const NameFriend = styled.p`
+  font-weight: 700;
+  font-size: 24px;
+`;
